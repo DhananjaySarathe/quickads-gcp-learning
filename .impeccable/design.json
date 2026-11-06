@@ -1,0 +1,625 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-06T22:53:25.941131Z",
+  "title": "Design System: QuickAds Cloud Lab",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Navy ink",
+        "tonalRamp": [
+          "oklch(15% 0.0095 255.79)",
+          "oklch(26% 0.0237 255.79)",
+          "oklch(37% 0.0379 255.79)",
+          "oklch(49% 0.0501 255.79)",
+          "oklch(62% 0.0527 255.79)",
+          "oklch(75% 0.0422 255.79)",
+          "oklch(87% 0.0237 255.79)",
+          "oklch(95% 0.0079 255.79)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Slate",
+        "tonalRamp": [
+          "oklch(15% 0.0081 259.21)",
+          "oklch(26% 0.0202 259.21)",
+          "oklch(37% 0.0324 259.21)",
+          "oklch(49% 0.0427 259.21)",
+          "oklch(62% 0.0450 259.21)",
+          "oklch(75% 0.0360 259.21)",
+          "oklch(87% 0.0202 259.21)",
+          "oklch(95% 0.0067 259.21)"
+        ]
+      },
+      "blue": {
+        "role": "primary",
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(15% 0.0371 266.63)",
+          "oklch(26% 0.0928 266.63)",
+          "oklch(37% 0.1484 266.63)",
+          "oklch(49% 0.1958 266.63)",
+          "oklch(62% 0.2061 266.63)",
+          "oklch(75% 0.1649 266.63)",
+          "oklch(87% 0.0928 266.63)",
+          "oklch(95% 0.0309 266.63)"
+        ]
+      },
+      "blue-dark": {
+        "role": "primary",
+        "displayName": "Deep cobalt",
+        "tonalRamp": [
+          "oklch(15% 0.0331 266.35)",
+          "oklch(26% 0.0828 266.35)",
+          "oklch(37% 0.1324 266.35)",
+          "oklch(49% 0.1748 266.35)",
+          "oklch(62% 0.1840 266.35)",
+          "oklch(75% 0.1472 266.35)",
+          "oklch(87% 0.0828 266.35)",
+          "oklch(95% 0.0276 266.35)"
+        ]
+      },
+      "sky": {
+        "role": "primary",
+        "displayName": "Ice blue",
+        "tonalRamp": [
+          "oklch(15% 0.0031 267.79)",
+          "oklch(26% 0.0076 267.79)",
+          "oklch(37% 0.0122 267.79)",
+          "oklch(49% 0.0161 267.79)",
+          "oklch(62% 0.0169 267.79)",
+          "oklch(75% 0.0136 267.79)",
+          "oklch(87% 0.0076 267.79)",
+          "oklch(95% 0.0025 267.79)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Deep learning green",
+        "tonalRamp": [
+          "oklch(15% 0.0137 172.39)",
+          "oklch(26% 0.0342 172.39)",
+          "oklch(37% 0.0548 172.39)",
+          "oklch(49% 0.0722 172.39)",
+          "oklch(62% 0.0760 172.39)",
+          "oklch(75% 0.0608 172.39)",
+          "oklch(87% 0.0342 172.39)",
+          "oklch(95% 0.0114 172.39)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Fine rule",
+        "tonalRamp": [
+          "oklch(15% 0.0028 257.20)",
+          "oklch(26% 0.0070 257.20)",
+          "oklch(37% 0.0112 257.20)",
+          "oklch(49% 0.0148 257.20)",
+          "oklch(62% 0.0156 257.20)",
+          "oklch(75% 0.0125 257.20)",
+          "oklch(87% 0.0070 257.20)",
+          "oklch(95% 0.0023 257.20)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White paper",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(26% 0.0000 89.88)",
+          "oklch(37% 0.0000 89.88)",
+          "oklch(49% 0.0000 89.88)",
+          "oklch(62% 0.0000 89.88)",
+          "oklch(75% 0.0000 89.88)",
+          "oklch(87% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      },
+      "lesson-surface": {
+        "role": "neutral",
+        "displayName": "Lesson paper",
+        "tonalRamp": [
+          "oklch(15% 0.0016 264.52)",
+          "oklch(26% 0.0039 264.52)",
+          "oklch(37% 0.0062 264.52)",
+          "oklch(49% 0.0082 264.52)",
+          "oklch(62% 0.0086 264.52)",
+          "oklch(75% 0.0069 264.52)",
+          "oklch(87% 0.0039 264.52)",
+          "oklch(95% 0.0013 264.52)"
+        ]
+      },
+      "lab-surface": {
+        "role": "secondary",
+        "displayName": "Mint paper",
+        "tonalRamp": [
+          "oklch(15% 0.0013 164.94)",
+          "oklch(26% 0.0034 164.94)",
+          "oklch(37% 0.0054 164.94)",
+          "oklch(49% 0.0071 164.94)",
+          "oklch(62% 0.0075 164.94)",
+          "oklch(75% 0.0060 164.94)",
+          "oklch(87% 0.0034 164.94)",
+          "oklch(95% 0.0011 164.94)"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Mint",
+        "tonalRamp": [
+          "oklch(15% 0.0039 167.47)",
+          "oklch(26% 0.0098 167.47)",
+          "oklch(37% 0.0157 167.47)",
+          "oklch(49% 0.0207 167.47)",
+          "oklch(62% 0.0217 167.47)",
+          "oklch(75% 0.0174 167.47)",
+          "oklch(87% 0.0098 167.47)",
+          "oklch(95% 0.0033 167.47)"
+        ]
+      },
+      "apricot": {
+        "role": "tertiary",
+        "displayName": "Apricot",
+        "tonalRamp": [
+          "oklch(15% 0.0055 57.92)",
+          "oklch(26% 0.0137 57.92)",
+          "oklch(37% 0.0219 57.92)",
+          "oklch(49% 0.0289 57.92)",
+          "oklch(62% 0.0305 57.92)",
+          "oklch(75% 0.0244 57.92)",
+          "oklch(87% 0.0137 57.92)",
+          "oklch(95% 0.0046 57.92)"
+        ]
+      },
+      "request-packet": {
+        "role": "tertiary",
+        "displayName": "Request packet",
+        "tonalRamp": [
+          "oklch(15% 0.0248 55.02)",
+          "oklch(26% 0.0619 55.02)",
+          "oklch(37% 0.0991 55.02)",
+          "oklch(49% 0.1307 55.02)",
+          "oklch(62% 0.1376 55.02)",
+          "oklch(75% 0.1101 55.02)",
+          "oklch(87% 0.0619 55.02)",
+          "oklch(95% 0.0206 55.02)"
+        ]
+      },
+      "lilac": {
+        "role": "tertiary",
+        "displayName": "Lilac",
+        "tonalRamp": [
+          "oklch(15% 0.0054 296.23)",
+          "oklch(26% 0.0134 296.23)",
+          "oklch(37% 0.0215 296.23)",
+          "oklch(49% 0.0284 296.23)",
+          "oklch(62% 0.0299 296.23)",
+          "oklch(75% 0.0239 296.23)",
+          "oklch(87% 0.0134 296.23)",
+          "oklch(95% 0.0045 296.23)"
+        ]
+      },
+      "yellow": {
+        "role": "tertiary",
+        "displayName": "Soft yellow",
+        "tonalRamp": [
+          "oklch(15% 0.0094 91.77)",
+          "oklch(26% 0.0236 91.77)",
+          "oklch(37% 0.0378 91.77)",
+          "oklch(49% 0.0498 91.77)",
+          "oklch(62% 0.0524 91.77)",
+          "oklch(75% 0.0420 91.77)",
+          "oklch(87% 0.0236 91.77)",
+          "oklch(95% 0.0079 91.77)"
+        ]
+      },
+      "small-numeral": {
+        "role": "neutral",
+        "displayName": "Small numeral slate",
+        "tonalRamp": [
+          "oklch(15% 0.0090 257.96)",
+          "oklch(26% 0.0225 257.96)",
+          "oklch(37% 0.0360 257.96)",
+          "oklch(49% 0.0474 257.96)",
+          "oklch(62% 0.0499 257.96)",
+          "oklch(75% 0.0400 257.96)",
+          "oklch(87% 0.0225 257.96)",
+          "oklch(95% 0.0075 257.96)"
+        ]
+      },
+      "focus": {
+        "role": "tertiary",
+        "displayName": "Burnt orange focus",
+        "tonalRamp": [
+          "oklch(15% 0.0252 47.09)",
+          "oklch(26% 0.0629 47.09)",
+          "oklch(37% 0.1006 47.09)",
+          "oklch(49% 0.1328 47.09)",
+          "oklch(62% 0.1397 47.09)",
+          "oklch(75% 0.1118 47.09)",
+          "oklch(87% 0.0629 47.09)",
+          "oklch(95% 0.0210 47.09)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Opening title."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Base subsection heading role."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default reading rhythm."
+      },
+      "lesson-body": {
+        "displayName": "Lesson Body",
+        "purpose": "Lesson explanation and action text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Primary, secondary and quiet controls."
+      },
+      "navigation": {
+        "displayName": "Navigation",
+        "purpose": "Header navigation links."
+      },
+      "field": {
+        "displayName": "Field",
+        "purpose": "Tutor prompt textarea."
+      }
+    },
+    "shadows": [
+      {
+        "name": "exhibit-ambient",
+        "value": "0 12px 32px rgba(38,65,117,.07)",
+        "purpose": "Request exhibit on the ice-blue surface."
+      },
+      {
+        "name": "animation-control",
+        "value": "0 3px 10px rgba(27,76,55,.05)",
+        "purpose": "White play/stop control."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-color",
+        "value": "0.18s ease",
+        "purpose": "Background, text and border color on buttons and links when motion is permitted."
+      },
+      {
+        "name": "progress-width",
+        "value": "0.25s ease-out",
+        "purpose": "Progress and work bars."
+      },
+      {
+        "name": "node-outline",
+        "value": "0.2s ease",
+        "purpose": "Active diagram node outline color."
+      },
+      {
+        "name": "packet-travel",
+        "value": "1350ms linear",
+        "purpose": "User-started request packet movement; reduced motion jumps to the endpoint."
+      },
+      {
+        "name": "request-step",
+        "value": "3600ms",
+        "purpose": "Automatic step cadence within the finite four-step journey."
+      },
+      {
+        "name": "gif-session",
+        "value": "14400ms",
+        "purpose": "Return an explicitly started GIF to its static poster."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "desktop-tight",
+        "value": "1100px"
+      },
+      {
+        "name": "stacked",
+        "value": "850px"
+      },
+      {
+        "name": "phone",
+        "value": "600px"
+      },
+      {
+        "name": "small-phone",
+        "value": "360px"
+      }
+    ],
+    "provenance": {
+      "mode": "scan",
+      "tokenAuthority": "DESIGN.md YAML frontmatter; extracted from the current implementation",
+      "sourceFiles": [
+        {
+          "path": "src/styles.css",
+          "sha256": "3f5777d476d2481343abfda9c85df7c41168a0955bb3adb5ad34275299413dd4"
+        },
+        {
+          "path": "src/roadmap.html",
+          "sha256": "6df2ee4390616da009027aaa8b66d6587c262317e85deff6c4019b10ac846393"
+        },
+        {
+          "path": "src/app.js",
+          "sha256": "532945d1bda6fc0780129e71cf92d9be066c86df957af739df364ec18dc93e2b"
+        },
+        {
+          "path": "PRODUCT.md",
+          "sha256": "628efd4399d39e813998b42a5ef1034fc27d60d3cacd67f231409e84ff87d553"
+        },
+        {
+          "path": ".impeccable/surfaces/src-roadmap-html.md",
+          "sha256": "5d9db4657654336fca808c67f27192b2cc4e7f6902c9439b8a1943e466d3b39a"
+        }
+      ],
+      "reviewEvidence": [
+        {
+          "path": ".impeccable/review/desktop.jpg",
+          "sha256": "1bebe2b2e90a5b1af79192496a514824495648a0573755475736c11732269ecf"
+        },
+        {
+          "path": ".impeccable/review/desktop-hero.jpg",
+          "sha256": "ea526c24d9b1d47682a21d447d63c03261f5925b9aa7a0c505242d6df0b84ad9"
+        },
+        {
+          "path": ".impeccable/review/mobile.jpg",
+          "sha256": "29dc427b8643ac785c9609ed87cf33e6c15bff2b9e164d27291f80276d4d5935"
+        },
+        {
+          "path": ".impeccable/review/narrow-725.jpg",
+          "sha256": "1931e60c5b95e339d3d037aa8f3b43eb37699f11e7a2699e060eff2af4ce6cd1"
+        },
+        {
+          "path": ".impeccable/review/cache-frames.png",
+          "sha256": "8ea6de58b4d22f15e9efc8f0ab510aafad1b2adebb2cce33fea6462d5f1f2f0a"
+        },
+        {
+          "path": ".impeccable/review/scaling-frames.png",
+          "sha256": "4d6aae17bb65b2643cacccfa94ff1fc8d69d9f3e7a050288e330055835482fc5"
+        }
+      ],
+      "reviewDisposition": "SHIP, reported by the parent finish reviewer after the small-numeral correction to #596c88.",
+      "componentSources": {
+        "button-primary": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".button",
+            ".primary"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "button-secondary": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".button",
+            ".secondary",
+            ".small"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "button-quiet": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".button",
+            ".quiet",
+            ".small"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "text-link": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".text-link"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "prompt-field": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".prompt-area"
+          ],
+          "markup": "src/roadmap.html; dynamic full prompt in src/app.js"
+        },
+        "navigation": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".site-nav"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "progress-badge": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".header-progress"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "lesson-pane": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".lesson-pane",
+            ".lesson-meta",
+            ".lesson-type",
+            ".try-action",
+            ".lesson-proof",
+            ".lesson-controls",
+            ".complete-control",
+            ".text-link"
+          ],
+          "markup": "src/roadmap.html; first lesson text and state in src/app.js"
+        },
+        "journey-station": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".journey-stop",
+            ".stop-blue",
+            ".station",
+            ".station-number",
+            ".station-time",
+            ".station-caption",
+            ".station-progress",
+            ".is-done"
+          ],
+          "markup": "src/roadmap.html"
+        },
+        "request-exhibit": {
+          "source": "src/styles.css",
+          "selectors": [
+            ".request-demo",
+            ".demo-heading",
+            ".live-dot",
+            ".request-stage",
+            ".request-paths",
+            ".path-base",
+            ".path-return",
+            ".flow-node",
+            ".browser-node",
+            ".api-node",
+            ".data-node",
+            ".node-icon",
+            ".flow-label",
+            ".request-label",
+            ".response-label",
+            ".demo-explanation",
+            ".demo-controls",
+            ".simulation-note",
+            ".button",
+            ".primary",
+            ".quiet",
+            ".small"
+          ],
+          "markup": "src/roadmap.html"
+        }
+      },
+      "previewAdaptations": [
+        "Classes are prefixed with ds-.",
+        "Source SVG symbols are inlined.",
+        "Source custom properties retain literal fallback values for isolated previews.",
+        "Dynamic app components show representative static content; previews do not claim to run the app.",
+        "The focused lesson preview omits its diagram inset; the request exhibit supplies the diagram grammar."
+      ],
+      "tonalRamps": "Preview-only synthesized OKLCH ramps, dark to light, derived from each extracted source hue. They are not implemented palette tokens.",
+      "notCanonized": "No known uncorrected finish defect. Page-specific composition and isolated tiny metadata sizes are not promoted to global design rules."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action; source label from the roadmap entry point.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-button ds-primary\" href=\"#roadmap\">Explore your roadmap<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 19px;font-size:14px;font-weight:750;border:1px solid transparent;border-radius:9px;text-decoration:none;line-height:1.5}.ds-primary{color:#fff;background:var(--blue, #3055d9)}.ds-primary:hover{background:var(--blue-dark, #2343b5)}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action using the small variant used for copying the tutor prompt.",
+      "html": "<div class=\"ds-preview\"><button type=\"button\" class=\"ds-button ds-secondary ds-small\">Copy lesson prompt</button></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 19px;font-size:14px;font-weight:750;border:1px solid transparent;border-radius:9px;text-decoration:none;line-height:1.5}.ds-secondary{background:#fff;border-color:#bdcae7;color:var(--blue, #3055d9)}.ds-secondary:hover{background:var(--sky, #eef3ff)}.ds-small{min-height:44px;padding:9px 13px;font-size:13px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Quiet button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Low-emphasis step control in the request exhibit.",
+      "html": "<div class=\"ds-preview\"><button type=\"button\" class=\"ds-button ds-quiet ds-small\">Step through<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></button></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 19px;font-size:14px;font-weight:750;border:1px solid transparent;border-radius:9px;text-decoration:none;line-height:1.5}.ds-quiet{color:var(--ink, #172a43);background:transparent}.ds-quiet:hover{background:#e9eef8}.ds-small{min-height:44px;padding:9px 13px;font-size:13px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Text link",
+      "kind": "button",
+      "refersTo": "text-link",
+      "description": "Lightweight tutor action with hover underline.",
+      "html": "<div class=\"ds-preview\"><button type=\"button\" class=\"ds-text-link\">Learn with my tutor<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></button></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-text-link{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0;background:transparent;border:0;color:var(--blue, #3055d9);font-size:14px;font-weight:750;text-decoration:none}.ds-text-link:hover{text-decoration:underline}.ds-text-link .ds-icon{width:18px;height:18px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Tutor prompt field",
+      "kind": "input",
+      "refersTo": "prompt-field",
+      "description": "Read-only, resizable lesson prompt with its visible source label.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-prompt-area\"><label for=\"ds-tutor-prompt\">Paste this into our GCP chat</label><textarea id=\"ds-tutor-prompt\" rows=\"4\" readonly>Continue my QuickAds GCP learning roadmap. Teach me from zero, one small step at a time.</textarea></div></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-prompt-area{border-top:1px solid #dce5f3;padding-top:20px;margin-top:15px}.ds-prompt-area label{display:block;font-size:14px;font-weight:700;margin-bottom:10px}.ds-prompt-area textarea{display:block;width:100%;padding:12px;border:1px solid #a9b9d4;border-radius:8px;background:#fff;resize:vertical;font-size:14px;line-height:1.7;color:var(--ink, #172a43)}.ds-prompt-area button{margin-top:10px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}.ds-prompt-area textarea{caret-color:var(--blue, #3055d9)}"
+    },
+    {
+      "name": "Main navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Plain header links; the page wraps this row below the brand on phones.",
+      "html": "<div class=\"ds-preview\"><nav class=\"ds-site-nav\" aria-label=\"Main navigation\"><a href=\"#roadmap\">Your roadmap</a><a href=\"#visual-lab\">Visual lab</a><a href=\"#library\">Library</a></nav></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-site-nav{display:flex;align-items:center;gap:32px}.ds-site-nav a{color:var(--muted, #506079);font-size:14px;font-weight:700;text-decoration:none}.ds-site-nav a:hover{color:var(--blue, #3055d9)}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}@media(max-width:850px){.ds-site-nav{gap:18px}.ds-site-nav a{font-size:12px}}@media(max-width:600px){.ds-site-nav{justify-content:center;gap:32px;padding-top:4px}.ds-site-nav a{font-size:13px}}"
+    },
+    {
+      "name": "Progress badge",
+      "kind": "chip",
+      "refersTo": "progress-badge",
+      "description": "Linked tabular milestone count from the header.",
+      "html": "<div class=\"ds-preview\"><a class=\"ds-header-progress\" href=\"#progress\" aria-label=\"0 of 30 milestones completed. View your progress.\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 3v17h17M8 15l4-5 4 2 5-6m-5 0h5v5\"/></svg><span>0 / 30</span></a></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-header-progress{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--blue, #3055d9);background:var(--sky, #eef3ff);padding:9px 13px;border-radius:9px;white-space:nowrap;font-size:14px;font-weight:750;font-variant-numeric:tabular-nums}.ds-header-progress .ds-icon{width:18px;height:18px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Focused lesson pane",
+      "kind": "card",
+      "refersTo": "lesson-pane",
+      "description": "Representative first lesson with explanation, action, evidence and completion control; diagram inset omitted in this compact preview.",
+      "html": "<div class=\"ds-preview\"><article class=\"ds-lesson-pane\"><div class=\"ds-lesson-meta\"><span>Step 1 of 6</span><span class=\"ds-lesson-type\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5c-3-3-7-3-10-1v15c3-2 7-2 10 1 3-3 7-3 10-1V4c-3-2-7-2-10 1Zm0 0v15\"/></svg>Learn + try</span></div><h3>Google account ready</h3><p>Your Google account is your identity. Google Cloud uses it to know who is signing in; a project is where you’ll organize your cloud resources.</p><div class=\"ds-try-action\"><strong>Try this</strong><p>Sign in to your own Google account and check that you can access its recovery options. Keep this learning account separate from company production work.</p></div><p class=\"ds-lesson-proof\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><span>You’re ready when: You can sign in to Google.</span></p><div class=\"ds-lesson-controls\"><label class=\"ds-complete-control\"><input type=\"checkbox\"><span>I can do this</span></label><button class=\"ds-text-link\" type=\"button\">Learn with my tutor<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></button></div></article></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-text-link{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:0;background:transparent;border:0;color:var(--blue, #3055d9);font-size:14px;font-weight:750;text-decoration:none}.ds-text-link:hover{text-decoration:underline}.ds-text-link .ds-icon{width:18px;height:18px}.ds-lesson-pane{padding:28px 30px 22px;background:#f4f7fd;border:1px solid #dee6f3;border-radius:16px;min-width:0}.ds-lesson-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#536783;font-size:12px;font-weight:700}.ds-lesson-type{display:flex;align-items:center;gap:5px}.ds-lesson-type .ds-icon{width:15px;height:15px}.ds-lesson-pane h3{font-size:25px;margin-top:15px;line-height:1.4}.ds-lesson-pane>p{font-size:15px;line-height:1.9}.ds-try-action{margin-top:20px}.ds-try-action strong{font-size:14px}.ds-try-action p{margin-top:4px;font-size:15px;line-height:1.9}.ds-lesson-proof{display:flex;align-items:flex-start;gap:8px;margin-top:17px;color:var(--green, #17604e)!important;font-size:13px!important}.ds-lesson-proof .ds-icon{width:18px;height:18px;margin-top:3px}.ds-lesson-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid #dce5f3;padding-top:17px;margin-top:20px}.ds-complete-control{display:flex;align-items:center;gap:9px;font-size:13px;font-weight:750;cursor:pointer;min-height:44px}.ds-complete-control input{width:20px;height:20px;accent-color:var(--green, #17604e);margin:0;cursor:pointer}.ds-lesson-controls .ds-text-link{font-size:12px}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}.ds-lesson-pane h3{font-family:var(--display, Sora, Arial, sans-serif);font-weight:600;letter-spacing:-.035em;text-wrap:balance;margin-bottom:18px}.ds-lesson-pane p{margin:0;color:var(--muted, #506079)}.ds-lesson-pane .ds-lesson-proof{margin-top:17px}.ds-lesson-pane .ds-try-action p{margin-top:4px}@media(max-width:600px){.ds-lesson-pane{padding:23px 20px;border-radius:13px}.ds-lesson-pane h3{font-size:24px}.ds-lesson-pane>p,.ds-try-action p{font-size:15px}}"
+    },
+    {
+      "name": "Chapter station",
+      "kind": "custom",
+      "refersTo": "journey-station",
+      "description": "Selected chapter with persistent number, timing, caption and progress.",
+      "html": "<div class=\"ds-preview\"><button type=\"button\" class=\"ds-journey-stop ds-stop-blue\" aria-pressed=\"true\"><span class=\"ds-station\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M7 18a5 5 0 1 1 .4-10A6 6 0 0 1 19 10a4 4 0 0 1 0 8Z\"/></svg><span class=\"ds-station-number\">1</span></span><span class=\"ds-station-time\">Start here</span><strong>Set up your cloud</strong><span class=\"ds-station-caption\">Account &amp; free credits</span><span class=\"ds-station-progress\">0 of 6</span></button></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-journey-stop{display:flex;flex-direction:column;align-items:center;position:relative;background:transparent;border:0;padding:0 7px 14px;min-width:0;text-align:center;border-radius:12px}.ds-journey-stop:hover{background:#f6f8fc}.ds-journey-stop:nth-child(1){padding-top:30px}.ds-journey-stop:nth-child(5){padding-top:30px}.ds-journey-stop:nth-child(3){padding-top:40px}.ds-station{position:relative;display:grid;place-items:center;width:72px;height:72px;border-radius:22px;background:#e8efff;color:#4568d3;border:5px solid #fff;box-sizing:content-box}.ds-station>.ds-icon{width:32px;height:32px;stroke-width:1.5}.ds-station-number{position:absolute;right:-2px;bottom:-3px;display:grid;place-items:center;background:#fff;color:var(--muted, #506079);width:24px;height:24px;border:1px solid var(--line, #dce3ed);border-radius:50%;font-size:11px;font-weight:800}.ds-station-time{font-size:12px;line-height:1.4;color:var(--muted, #506079);margin:14px 0 6px;font-weight:700}.ds-journey-stop strong{font-family:var(--display, Sora,Arial,sans-serif);font-size:16px;letter-spacing:-.025em;font-weight:600;line-height:1.4}.ds-station-caption{font-size:12px;color:var(--muted, #506079);margin-top:5px;line-height:1.6}.ds-station-progress{font-size:11px;color:#596c88;margin-top:9px}.ds-journey-stop[aria-pressed=\"true\"] .ds-station{outline:2px solid var(--blue, #3055d9);outline-offset:3px}.ds-journey-stop[aria-pressed=\"true\"] strong{color:var(--blue, #3055d9)}.ds-journey-stop[aria-pressed=\"true\"] .ds-station-progress{color:var(--blue, #3055d9)}.ds-journey-stop[aria-pressed=\"true\"] .ds-station-progress{font-weight:800}.ds-journey-stop.ds-is-done .ds-station-number{background:var(--green, #17604e);border-color:var(--green, #17604e);color:#fff}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}"
+    },
+    {
+      "name": "Request exhibit",
+      "kind": "custom",
+      "refersTo": "request-exhibit",
+      "description": "Static preview of the causal diagram; the live app implements play, pause, step and explanatory updates.",
+      "html": "<div class=\"ds-preview\"><div class=\"ds-request-demo\" data-step=\"0\"><div class=\"ds-demo-heading\"><span>What happens after you click?</span><span class=\"ds-live-dot\">Interactive</span></div><div class=\"ds-request-stage\" role=\"img\" aria-label=\"A request travels from browser to API to data, then returns.\"><svg class=\"ds-request-paths\" viewBox=\"0 0 500 230\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path class=\"ds-path-base\" d=\"M83 76H428\"/><path class=\"ds-path-return\" d=\"M428 96H83\"/></svg><div class=\"ds-flow-node ds-browser-node\"><span class=\"ds-node-icon\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M3 9h18M7 6.5h.1m2.9 0h.1m-.1 6-3 2 3 2m4-4 3 2-3 2\"/></svg></span><strong>Your browser</strong><span>“Show my ad”</span></div><div class=\"ds-flow-node ds-api-node\"><span class=\"ds-node-icon\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"7\" rx=\"2\"/><rect x=\"3\" y=\"14\" width=\"18\" height=\"7\" rx=\"2\"/><path d=\"M7 6.5h.1M7 17.5h.1M12 7h5m-5 11h5\"/></svg></span><strong>Your API</strong><span>Cloud Run</span></div><div class=\"ds-flow-node ds-data-node\"><span class=\"ds-node-icon\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0\"/></svg></span><strong>Your data</strong><span>Saved ad details</span></div><span class=\"ds-flow-label ds-request-label\">request</span><span class=\"ds-flow-label ds-response-label\">response</span></div><div class=\"ds-demo-explanation\"><span>Ready?</span><p>One click can involve several services. Follow the little packet to see who does what.</p></div><div class=\"ds-demo-controls\"><button class=\"ds-button ds-primary ds-small\" type=\"button\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"m8 5 11 7-11 7Z\"/></svg><span>Play the journey</span></button><button class=\"ds-button ds-quiet ds-small\" type=\"button\">Step through<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></button></div><p class=\"ds-simulation-note\">A simplified learning example, not QuickAds’ production architecture.</p></div></div>",
+      "css": ".ds-icon{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}.ds-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 19px;font-size:14px;font-weight:750;border:1px solid transparent;border-radius:9px;text-decoration:none;line-height:1.5}.ds-primary{color:#fff;background:var(--blue, #3055d9)}.ds-primary:hover{background:var(--blue-dark, #2343b5)}.ds-quiet{color:var(--ink, #172a43);background:transparent}.ds-quiet:hover{background:#e9eef8}.ds-small{min-height:44px;padding:9px 13px;font-size:13px}.ds-request-demo{background:#fff;border:1px solid #d8e2f5;border-radius:18px;padding:24px 26px 18px;box-shadow:0 12px 32px rgba(38,65,117,.07);min-width:0}.ds-demo-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:750;font-size:15px}.ds-live-dot{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--green, #17604e);font-weight:700}.ds-live-dot::before{content:'';width:6px;height:6px;border-radius:50%;background:#25846a}.ds-request-stage{position:relative;aspect-ratio:500 / 230;margin:10px 0 17px}.ds-request-paths{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.ds-request-paths path{fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-path-base{stroke:#d3ddf0}.ds-path-return{stroke:#c4ded2;stroke-dasharray:5 6}.ds-request-paths circle{fill:#d47b36;stroke:#fff;stroke-width:3;opacity:0}.ds-request-demo[data-step=\"1\"] .ds-browser-node .ds-node-icon{outline:3px solid #6883db;outline-offset:4px}.ds-request-demo[data-step=\"2\"] .ds-api-node .ds-node-icon{outline:3px solid #6883db;outline-offset:4px}.ds-request-demo[data-step=\"3\"] .ds-data-node .ds-node-icon{outline:3px solid #6883db;outline-offset:4px}.ds-request-demo[data-step=\"4\"] .ds-browser-node .ds-node-icon{outline:3px solid #6883db;outline-offset:4px}.ds-request-demo[data-step=\"4\"] .ds-browser-node .ds-node-icon{outline-color:#55a286}.ds-flow-node{position:absolute;text-align:center;width:27%;display:flex;flex-direction:column;align-items:center}.ds-flow-node strong{font-size:13px;line-height:1.3;margin-top:10px}.ds-flow-node>span:last-child{font-size:11px;color:var(--muted, #506079);line-height:1.5;margin-top:3px}.ds-browser-node{left:3%;top:12%}.ds-api-node{left:37%;top:12%}.ds-data-node{right:1%;top:46%}.ds-node-icon{display:grid;place-items:center;width:60px;height:58px;border-radius:14px;background:#e7eeff;color:#3c5ec5}.ds-node-icon .ds-icon{width:29px;height:29px}.ds-api-node .ds-node-icon{background:#ffeadb;color:#9f5525}.ds-data-node .ds-node-icon{background:#e1f3eb;color:#28745b}.ds-flow-label{position:absolute;font-size:10px;font-weight:700;color:#5c7090;background:#fff;padding:2px 5px}.ds-request-label{left:25%;top:24%}.ds-response-label{left:49%;bottom:5%;color:#42745e}.ds-demo-explanation{display:flex;gap:12px;min-height:83px;padding:14px 0;border-top:1px solid #e4e9f2}.ds-demo-explanation>span{flex-shrink:0;color:var(--blue, #3055d9);font-size:12px;font-weight:800;min-width:40px;padding-top:2px}.ds-demo-explanation p{font-size:13px;line-height:1.75;color:#53627b}.ds-demo-controls{display:flex;justify-content:space-between;gap:8px;align-items:center}.ds-simulation-note{font-size:11px;line-height:1.6;margin-top:13px;color:#617088}.ds-preview{font:16px/1.7 var(--body, Manrope, Arial, sans-serif);color:var(--ink, #172a43)}.ds-preview button,.ds-preview a,.ds-preview input,.ds-preview textarea{font-family:var(--body, Manrope, Arial, sans-serif)}.ds-preview button{cursor:pointer}.ds-preview button:disabled{cursor:default;opacity:.55}.ds-preview button:focus-visible,.ds-preview a:focus-visible,.ds-preview textarea:focus-visible,.ds-preview input:focus-visible{outline:3px solid #b75820;outline-offset:5px}@media(prefers-reduced-motion:no-preference){.ds-preview button,.ds-preview a{transition:background-color .18s,color .18s,border-color .18s}}.ds-request-stage{aspect-ratio:500/185}.ds-data-node{top:12%}.ds-flow-node strong{font-size:14px}.ds-request-label{left:26%;top:4%}.ds-response-label{left:62%;top:4%;bottom:auto}.ds-demo-explanation p,.ds-simulation-note{margin-bottom:0}.ds-demo-explanation p{margin-top:0}@media(max-width:600px){.ds-request-demo{padding:19px 18px 15px}.ds-demo-heading{font-size:13px}.ds-request-stage{aspect-ratio:500/215}.ds-node-icon{width:47px;height:45px;border-radius:12px}.ds-node-icon .ds-icon{width:25px;height:25px}.ds-flow-node strong{font-size:12px}.ds-flow-node>span:last-child{font-size:10px}.ds-request-label,.ds-response-label{top:2%;font-size:10px}.ds-demo-controls .ds-button{font-size:11px;padding:10px 8px;gap:6px}.ds-demo-controls .ds-icon{width:17px;height:17px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Science-museum field guide",
+    "overview": "An approachable, readable guide that makes cloud behavior visible. White and ice-blue surfaces give explanations room; rounded stations, fine connectors, and purposeful color make relationships easy to follow. Generous Sora headings establish hierarchy above clear Manrope reading text.\n\nVisuals earn their place by teaching. A diagram shows a request moving between services; a short, user-controlled animation reveals a change in work or capacity. Explanations remain available as ordinary text. This system follows the user's confirmed preference for light surfaces and educational motion, and excludes the rejected decorative cloud artwork.",
+    "keyCharacteristics": [
+      "Light reading surfaces with navy text and clear contrast.",
+      "Rounded diagram stations connected by fine causal paths.",
+      "Open lesson and resource rows beside a focused reading pane.",
+      "User-controlled educational motion with static and textual alternatives."
+    ],
+    "rules": [],
+    "dos": [
+      "Do keep white or pale reading surfaces, navy text, and the established common focus outline.",
+      "Do use cobalt for actions and selection, and green for completion and learning feedback.",
+      "Do preserve visible labels, numbered position, and non-color evidence of state.",
+      "Do use stable, labeled diagram nodes and connector paths that explain a relationship.",
+      "Do provide user-controlled motion, a static starting state, and a written explanation.",
+      "Do stack complex teaching layouts at the established breakpoints while keeping lesson text left-aligned."
+    ],
+    "donts": [
+      "Don't introduce a dark theme or replace the confirmed educational visuals with decorative cloud artwork.",
+      "Don't put essential lesson instructions only inside a raster image or animation.",
+      "Don't turn every lesson or resource row into a separate elevated card.",
+      "Don't auto-start educational animation or use ambient movement without a teaching purpose.",
+      "Don't promote an isolated small metadata size into the body-text scale."
+    ]
+  }
+}
