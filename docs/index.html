@@ -1,276 +1,97 @@
 <!doctype html>
-<html lang="en" style="color-scheme:only light;background:#f6f8fc">
+<html lang="en" style="color-scheme:only light;background:#fff">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="only light">
-<meta name="theme-color" content="#f6f8fc">
-<meta name="description" content="Dhananjay’s practical Google Cloud learning roadmap for working toward service ownership at QuickAds.">
-<title>QuickAds GCP Learning Roadmap</title>
-<link rel="stylesheet" href="./styles.css">
+<meta name="theme-color" content="#eef3ff">
+<meta name="description" content="Learn Google Cloud with a visual roadmap, step-by-step request animations, educational GIFs, and short practical lessons. Dhananjay’s QuickAds Cloud Lab.">
+<title>QuickAds Cloud Lab · Learn by seeing and doing</title>
+<link rel="stylesheet" href="./styles.css?v=3f5777d476">
 </head>
 <body>
-<div id="gcp-learning-roadmap">
-  <div class="site-masthead">
-    <div class="brand"><span class="brand-symbol"><i data-lucide="cloud" aria-hidden="true"></i></span><span>GCP <span class="brand-light">Learning</span></span></div>
-    <span class="personal-label">Dhananjay’s QuickAds learning space</span>
+<svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 .4-10A6 6 0 0 1 19 10a4 4 0 0 1 0 8Z"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+<symbol id="i-rocket" viewBox="0 0 24 24"><path d="m9 15-3-3c2-6 6-9 14-9 0 8-3 12-9 14l-2-2Zm-3-3H3l1-5 5-1m2 11v4l5-1 1-6M6 17l-3 4m0-4 4 4"/><circle cx="15" cy="8" r="2"/></symbol>
+<symbol id="i-pulse" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+<symbol id="i-network" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 8v4H5v4m7-4h7v4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 3v17h17M8 15l4-5 4 2 5-6m-5 0h5v5"/></symbol>
+<symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.1m2.9 0h.1m-.1 6-3 2 3 2m4-4 3 2-3 2"/></symbol>
+<symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.1M7 17.5h.1M12 7h5m-5 11h5"/></symbol>
+<symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 4 16 4 16 0V5M4 12c0 4 16 4 16 0"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-3-7-3-10-1v15c3-2 7-2 10 1 3-3 7-3 10-1V4c-3-2-7-2-10 1Zm0 0v15"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 15v5h16v-5"/></symbol>
+<symbol id="i-external" viewBox="0 0 24 24"><path d="M14 3h7v7m0-7L10 14M11 3H4v17h17v-7"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2"/></symbol>
+</defs></svg>
+<a class="skip-link" href="#roadmap">Skip to your roadmap</a>
+<header class="site-header"><div class="header-inner">
+  <a class="brand" href="#top" aria-label="QuickAds Cloud Lab home"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg></span><span><strong>quickads</strong><span class="brand-divider">/</span><span>cloud lab</span></span></a>
+  <nav class="site-nav" aria-label="Main navigation"><a href="#roadmap">Your roadmap</a><a href="#visual-lab">Visual lab</a><a href="#library">Library</a></nav>
+  <a class="header-progress" href="#progress"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><span id="header-count">0 / 30</span><span class="sr-only">milestones completed. View your progress.</span></a>
+</div></header>
+<main id="top">
+<section class="hero" aria-labelledby="hero-title"><div class="hero-inner">
+  <div class="hero-copy"><h1 id="hero-title">Big cloud.<br><span>Small steps.</span></h1><p>From frontend developer to owning what runs behind it. Learn Google Cloud by seeing it, trying it, and making it work.</p><div class="hero-actions"><a class="button primary" href="#roadmap">Explore your roadmap<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="text-link" href="#visual-lab">Jump into the visual lab</a></div><div class="hero-footnote"><span class="small-line"></span>Dhananjay’s path to cloud confidence at QuickAds</div></div>
+  <div class="request-demo" id="request-demo" data-step="0">
+    <div class="demo-heading"><span>What happens after you click?</span><span class="live-dot">Interactive</span></div>
+    <div class="request-stage" role="img" aria-label="A request travels from a browser to a backend API, which reads stored data and sends a response back.">
+      <svg class="request-paths" viewBox="0 0 500 230" preserveAspectRatio="none" aria-hidden="true"><path class="path-base" d="M83 76H428"/><path class="path-return" d="M428 96H83"/><circle id="request-packet" r="7" cx="83" cy="76"/></svg>
+      <div class="flow-node browser-node"><span class="node-icon"><svg class="icon" aria-hidden="true"><use href="#i-browser"/></svg></span><strong>Your browser</strong><span>“Show my ad”</span></div>
+      <div class="flow-node api-node"><span class="node-icon"><svg class="icon" aria-hidden="true"><use href="#i-server"/></svg></span><strong>Your API</strong><span>Cloud Run</span></div>
+      <div class="flow-node data-node"><span class="node-icon"><svg class="icon" aria-hidden="true"><use href="#i-database"/></svg></span><strong>Your data</strong><span>Saved ad details</span></div>
+      <span class="flow-label request-label">request</span><span class="flow-label response-label">response</span>
+    </div>
+    <div class="demo-explanation" aria-live="polite" aria-atomic="true"><span id="request-step-count">Ready?</span><p id="request-description">One click can involve several services. Follow the little packet to see who does what.</p></div>
+    <div class="demo-controls"><button class="button primary small" id="request-play" type="button"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><span>Play the journey</span></button><button class="button quiet small" id="request-next" type="button">Step through<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+    <p class="simulation-note">A simplified learning example, not QuickAds’ production architecture.</p>
   </div>
+</div><div class="hero-baseline"><span><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg>Start with zero cloud knowledge</span><span><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg>Two days to your first practice service</span><span><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg>Grow through 8–12 weeks of practice</span></div></section>
 
-  <header class="hero">
-    <div class="hero-copy">
-      <div class="eyebrow">Your path to operating GCP at QuickAds</div>
-      <h1>Learn GCP.<br>One step at a time.</h1>
-      <p>Your personal path into Google Cloud. Start with an account, ship your first service, and learn to keep it healthy and cost-efficient.</p>
-      <div class="hero-facts"><span><i data-lucide="rocket" aria-hidden="true"></i> 2-day launchpad</span><span><i data-lucide="route" aria-hidden="true"></i> 8–12 weeks of practice</span></div>
-    </div>
-    <div class="hero-route" aria-label="Your learning journey">
-      <div><span>01</span><strong>Set up your cloud</strong><i data-lucide="key-round" aria-hidden="true"></i></div>
-      <div><span>02</span><strong>Ship a real service</strong><i data-lucide="rocket" aria-hidden="true"></i></div>
-      <div><span>03</span><strong>Operate with confidence</strong><i data-lucide="activity" aria-hidden="true"></i></div>
-      <div><span>04</span><strong>Make it efficient</strong><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i></div>
-    </div>
-  </header>
-
-  <div class="workspace">
-    <aside class="roadmap-sidebar" aria-label="Roadmap navigation and progress">
-      <div class="eyebrow sidebar-heading">Your roadmap</div>
-      <div class="roadmap-phases" role="group" aria-label="Learning phase">
-        <button type="button" class="btn phase-btn" data-phase="setup" aria-pressed="true"><span class="phase-index">00</span><span>Start here<small>Account &amp; free credits</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
-        <button type="button" class="btn phase-btn" data-phase="day1" aria-pressed="false"><span class="phase-index">01</span><span>Day 1<small>Understand &amp; deploy</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
-        <button type="button" class="btn phase-btn" data-phase="day2" aria-pressed="false"><span class="phase-index">02</span><span>Day 2<small>Operate &amp; measure</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
-        <button type="button" class="btn phase-btn" data-phase="foundation" aria-pressed="false"><span class="phase-index">03</span><span>Weeks 1–4<small>Build your foundations</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
-        <button type="button" class="btn phase-btn" data-phase="ownership" aria-pressed="false"><span class="phase-index">04</span><span>Weeks 5–12<small>Own &amp; optimize</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
-      </div>
-      <div class="progress-section">
-        <div class="eyebrow">Your progress</div>
-        <div id="roadmap-count" class="tabular-nums">0 / 30 milestones completed</div>
-        <div id="roadmap-progress" class="progress" role="progressbar" aria-label="Completed learning milestones" aria-valuenow="0" aria-valuemin="0" aria-valuemax="30"><div class="progress-bar" style="width:0%"></div></div>
-        <div id="roadmap-storage-status" class="storage-note">Progress stays in this browser</div>
-        <div class="backup-actions">
-          <button id="roadmap-export" type="button" class="backup-button">Export progress</button>
-          <button id="roadmap-import-button" type="button" class="backup-button">Import progress</button>
-          <input id="roadmap-import" type="file" accept="application/json,.json" hidden aria-label="Select a progress backup">
-        </div>
-        <div id="roadmap-backup-status" class="storage-note" aria-live="polite"></div>
-      </div>
-      <a class="resource-link" href="https://cloud.google.com/free" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" aria-hidden="true"></i> Google Cloud signup</a>
-    </aside>
-
-    <main class="lesson-panel" aria-labelledby="roadmap-phase-title">
-      <div class="lesson-header"><span class="eyebrow">Learn by doing</span><span id="roadmap-time" class="time-badge">45–60 min · before Day 1</span></div>
-      <h2 id="roadmap-phase-title">Your first GCP account</h2>
-      <div id="roadmap-outcome" class="outcome"><span class="eyebrow">What you’ll learn</span><div>A learning project with trial status, credit balance, and spending alerts checked.</div></div>
-      <div class="checklist-heading"><h3>Your milestones</h3><span id="roadmap-phase-count" aria-live="polite">0 of 6 completed</span></div>
-      <div class="milestone-hint">Check each milestone when you can demonstrate it.</div>
-      <ol id="roadmap-steps" class="milestones"></ol>
-      <div class="lesson-action">
-        <div><strong>One small step at a time.</strong><span>Bring your next lesson back to our GCP chat.</span></div>
-        <button id="roadmap-learn" type="button" class="btn btn-primary">Prepare my next lesson</button>
-      </div>
-      <div id="roadmap-action-status" role="status" aria-live="polite"></div>
-      <div id="roadmap-prompt-area" hidden>
-        <label class="form-label" for="roadmap-prompt">Your lesson prompt · paste this into our GCP chat</label>
-        <textarea id="roadmap-prompt" class="form-control" rows="5" readonly></textarea>
-        <button id="roadmap-copy" type="button" class="btn copy-btn">Copy lesson prompt</button>
-      </div>
-    </main>
+<section class="roadmap-section section-shell" id="roadmap" aria-labelledby="roadmap-title">
+  <div class="section-heading"><div><h2 id="roadmap-title">Your route to <span class="ink-blue">“I’ve got this.”</span></h2><p>Five chapters. Thirty small wins. Start where you are.</p></div><a class="text-link" href="#progress">View your progress<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+  <div class="journey-map"><svg class="journey-track" viewBox="0 0 1000 110" preserveAspectRatio="none" aria-hidden="true"><path d="M90 65C180 65 190 30 300 30S400 75 500 75 600 30 700 30 810 65 910 65"/></svg><div class="journey-stops" role="group" aria-label="Choose a learning chapter">
+    <button type="button" class="journey-stop stop-blue" data-phase="setup" aria-pressed="true"><span class="station"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg><span class="station-number">1</span></span><span class="station-time">Start here</span><strong>Set up your cloud</strong><span class="station-caption">Account &amp; free credits</span><span class="station-progress" data-progress="setup">0 of 6</span></button>
+    <button type="button" class="journey-stop stop-peach" data-phase="day1" aria-pressed="false"><span class="station"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg><span class="station-number">2</span></span><span class="station-time">Day 1</span><strong>Ship something</strong><span class="station-caption">Your first running API</span><span class="station-progress" data-progress="day1">0 of 6</span></button>
+    <button type="button" class="journey-stop stop-mint" data-phase="day2" aria-pressed="false"><span class="station"><svg class="icon" aria-hidden="true"><use href="#i-pulse"/></svg><span class="station-number">3</span></span><span class="station-time">Day 2</span><strong>Keep it healthy</strong><span class="station-caption">Observe, recover, measure</span><span class="station-progress" data-progress="day2">0 of 6</span></button>
+    <button type="button" class="journey-stop stop-lilac" data-phase="foundation" aria-pressed="false"><span class="station"><svg class="icon" aria-hidden="true"><use href="#i-network"/></svg><span class="station-number">4</span></span><span class="station-time">Weeks 1–4</span><strong>Connect the dots</strong><span class="station-caption">Build your foundations</span><span class="station-progress" data-progress="foundation">0 of 6</span></button>
+    <button type="button" class="journey-stop stop-yellow" data-phase="ownership" aria-pressed="false"><span class="station"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><span class="station-number">5</span></span><span class="station-time">Weeks 5–12</span><strong>Own &amp; optimize</strong><span class="station-caption">Make measured improvements</span><span class="station-progress" data-progress="ownership">0 of 6</span></button>
+  </div></div>
+  <div class="chapter-workspace" id="chapter-workspace"><div class="chapter-contents"><div class="chapter-title-row"><h3 id="roadmap-phase-title">Your first GCP account</h3><span id="roadmap-phase-count">0 / 6</span></div><p class="chapter-time"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span id="roadmap-time">45–60 min · before Day 1</span></p><p id="roadmap-outcome" class="chapter-outcome">A learning project with trial status, credit balance, and spending alerts checked.</p><ol class="lesson-list" id="roadmap-steps"></ol></div>
+    <article class="lesson-pane" id="lesson-pane" aria-labelledby="lesson-title"><div class="lesson-meta"><span id="lesson-position">Step 1 of 6</span><span class="lesson-type"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg>Learn + try</span></div><h3 id="lesson-title">Google account ready</h3><div id="lesson-visual" class="lesson-visual"></div><p id="lesson-explanation"></p><div class="try-action"><strong>Try this</strong><p id="lesson-action"></p></div><p class="lesson-proof"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span id="lesson-proof"></span></p><div class="lesson-controls"><label class="complete-control"><input id="lesson-complete" type="checkbox"><span>I can do this</span></label><button class="text-link" id="roadmap-learn" type="button">Learn with my tutor<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><div id="roadmap-prompt-area" class="prompt-area" hidden><label for="roadmap-prompt">Paste this into our GCP chat</label><textarea id="roadmap-prompt" rows="5" readonly></textarea><button class="button secondary small" id="roadmap-copy" type="button">Copy lesson prompt</button></div><p id="roadmap-action-status" class="status-text" role="status"></p></article>
   </div>
+</section>
 
-  <section class="learning-resources" aria-labelledby="resources-title">
-    <h2 id="resources-title">A few useful starting points</h2>
-    <p>Watch a short introduction, try a guided lab, then learn by building your own service.</p>
-    <div class="resource-grid">
-      <a href="https://www.youtube.com/watch?v=kzKFuHk8ovk" target="_blank" rel="noopener noreferrer"><strong>What is Google Cloud?</strong><span>Google Cloud Tech · a short first introduction</span></a>
-      <a href="https://www.skills.google/focuses/2794?parent=catalog" target="_blank" rel="noopener noreferrer"><strong>Your first hands-on lab</strong><span>Explore the console using the lab’s temporary credentials</span></a>
-      <a href="https://www.youtube.com/watch?v=AL2rAmWFZjM" target="_blank" rel="noopener noreferrer"><strong>Cloud Run in a minute</strong><span>Meet the platform for your first API deployment</span></a>
-      <a href="https://www.freecodecamp.org/news/pass-the-google-cloud-associate-cloud-engineer-exam/" target="_blank" rel="noopener noreferrer"><strong>A longer course to refer to</strong><span>freeCodeCamp · use relevant chapters as you progress</span></a>
-    </div>
-  </section>
+<section class="visual-lab" id="visual-lab" aria-labelledby="visual-lab-title"><div class="section-shell">
+  <div class="section-heading"><div><h2 id="visual-lab-title">Less memorizing.<br><span class="ink-green">More “oh, that’s how.”</span></h2><p>Play it. Pause it. Make the connection. These tiny lessons make cloud ideas visible.</p></div><span class="lab-duration"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>2–3 minutes each</span></div>
+  <div class="animation-grid">
+    <article class="animation-lesson" data-animation="cache"><div class="animation-canvas"><img id="cache-animation" src="./assets/cache-poster.png" width="960" height="560" alt="A cache miss reads from the database and stores a copy. A later cache hit uses that copy, avoiding another database read." loading="lazy"><button class="animation-toggle" data-gif="cache" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><span>Play animation</span></button></div><div class="animation-copy"><h3>Do the same work less often.</h3><p>A cache keeps a reusable answer close by. Watch a miss become a hit—and see which database work disappears.</p><details><summary>Explain it step by step</summary><ol><li>The app checks the cache for the data it needs.</li><li>On a miss, it reads the database and stores a reusable copy.</li><li>A later hit returns the cached copy without that database read.</li><li>Cached data can become stale. Choose expiry and invalidation rules; the cache itself also has a cost.</li></ol></details><div class="animation-links"><a href="./assets/cache-flow.gif" download class="text-link">Save GIF<svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a><a href="https://docs.cloud.google.com/memorystore/docs/redis/memorystore-for-redis-overview" target="_blank" rel="noopener noreferrer" class="text-link">Explore caching<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div></div></article>
+    <article class="animation-lesson" data-animation="scaling"><div class="animation-canvas"><img id="scaling-animation" src="./assets/scaling-poster.png" width="960" height="560" alt="More incoming requests lead to more application instances. As demand falls, instances can scale down, potentially to zero when configured to allow it." loading="lazy"><button class="animation-toggle" data-gif="scaling" type="button" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg><span>Play animation</span></button></div><div class="animation-copy"><h3>More traffic. More helping hands.</h3><p>An instance is a running copy of your app. See how adding copies helps with a rush, and how they scale back down.</p><details><summary>Explain it step by step</summary><ol><li>Requests arrive and a running instance handles them.</li><li>As load grows, the platform can start more instances.</li><li>When demand drops, it can remove unneeded instances.</li><li>Cloud Run can scale to zero with suitable settings. Timing, concurrency, CPU use, and instance limits affect real behavior.</li></ol></details><div class="animation-links"><a href="./assets/scaling-flow.gif" download class="text-link">Save GIF<svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a><a href="https://docs.cloud.google.com/run/docs/about-instance-autoscaling" target="_blank" rel="noopener noreferrer" class="text-link">Read about scaling<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></div></div></article>
+  </div>
+  <div class="experiment-grid">
+    <section class="cost-experiment" aria-labelledby="cost-title"><div class="experiment-title"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><h3 id="cost-title">Get a feel for the bill.</h3></div><p>Move the sliders. Notice how traffic and time change the amount of application work.</p><div class="slider-label"><label for="request-volume">Requests per day</label><output id="request-volume-value" for="request-volume">1,000</output></div><input type="range" id="request-volume" min="100" max="10000" step="100" value="1000"><div class="slider-label"><label for="request-duration">Work per request</label><output id="request-duration-value" for="request-duration">200 ms</output></div><input type="range" id="request-duration" min="100" max="1000" step="100" value="200"><div class="work-result"><span>Combined request processing time</span><output id="work-total" for="request-volume request-duration">3.3 min / day</output><div class="work-track" aria-hidden="true"><span id="work-bar"></span></div></div><p class="model-note">A learning model, not a price quote. This sums request durations; it is not billable instance time. Real charges also depend on CPU, memory, concurrency, billing mode, storage and network use.</p></section>
+    <section class="knowledge-check" aria-labelledby="quiz-title"><div class="experiment-title"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg><h3 id="quiz-title">One quick check.</h3></div><p class="quiz-scenario">Your ad service needs to <strong>read image files</strong> from one storage bucket. What access should it get?</p><div class="quiz-answers" role="group" aria-label="Choose the appropriate app permission"><button type="button" data-answer="owner">Owner of the whole project<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-answer="reader">Read access to the needed objects<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><button type="button" data-answer="password">Your personal account password<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><p id="quiz-feedback" class="quiz-feedback" role="status">Choose an answer to see the reasoning.</p><a class="text-link" href="https://docs.cloud.google.com/iam/docs/overview" target="_blank" rel="noopener noreferrer">Meet IAM: who can do what<svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a></section>
+  </div>
+</div></section>
 
-  <footer class="site-footer"><div><strong>Build → Deploy → Secure → Observe → Recover → Optimize</strong><span>Practical confidence, one milestone at a time.</span></div><div class="source-links"><span>References checked 24 Oct 2026</span><a href="https://docs.cloud.google.com/free/docs/free-cloud-features" target="_blank" rel="noopener noreferrer">Trial terms ↗</a><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets" target="_blank" rel="noopener noreferrer">Budget alerts ↗</a></div></footer>
-</div>
+<section class="library-section section-shell" id="library" aria-labelledby="library-title"><div class="section-heading"><div><h2 id="library-title">A little help along the way.</h2><p>A short video, a guided lab, or a deeper dive. Pick what you need today.</p></div><svg class="library-illustration icon" aria-hidden="true"><use href="#i-book"/></svg></div><div class="resource-list">
+  <a class="resource-row" href="https://www.youtube.com/watch?v=kzKFuHk8ovk" target="_blank" rel="noopener noreferrer"><span class="resource-symbol blue"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg></span><span class="resource-description"><strong>What is Google Cloud?</strong><span>Google Cloud Tech · your first overview</span></span><span class="resource-kind">Watch</span><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+  <a class="resource-row" href="https://www.skills.google/focuses/2794?parent=catalog" target="_blank" rel="noopener noreferrer"><span class="resource-symbol mint"><svg class="icon" aria-hidden="true"><use href="#i-browser"/></svg></span><span class="resource-description"><strong>Explore your first cloud console</strong><span>Google Skills · a lab with temporary credentials</span></span><span class="resource-kind">Practice</span><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+  <a class="resource-row" href="https://www.youtube.com/watch?v=AL2rAmWFZjM" target="_blank" rel="noopener noreferrer"><span class="resource-symbol peach"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg></span><span class="resource-description"><strong>Cloud Run in a minute</strong><span>Google Cloud Tech · a home for your first API</span></span><span class="resource-kind">Watch</span><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+  <a class="resource-row" href="https://www.freecodecamp.org/news/pass-the-google-cloud-associate-cloud-engineer-exam/" target="_blank" rel="noopener noreferrer"><span class="resource-symbol lilac"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><span class="resource-description"><strong>The deeper-dive course</strong><span>freeCodeCamp · use relevant chapters as you go</span></span><span class="resource-kind">Explore</span><svg class="icon" aria-hidden="true"><use href="#i-external"/></svg></a>
+</div></section>
 
+<section class="progress-section section-shell" id="progress" aria-labelledby="progress-title"><div class="progress-copy"><h2 id="progress-title">Every small win counts.</h2><p>You don’t need to know all of GCP. Keep making the next thing understandable.</p><a class="button primary" href="#roadmap" id="continue-learning">Continue learning<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="progress-details"><div class="progress-caption"><strong id="roadmap-count">0 of 30 milestones</strong><span id="progress-percent">0%</span></div><div id="roadmap-progress" class="progress-track" role="progressbar" aria-label="Completed learning milestones" aria-valuenow="0" aria-valuemin="0" aria-valuemax="30"><span></span></div><p id="roadmap-storage-status">Saved in this browser. Take a backup to another device.</p><div class="backup-actions"><button id="roadmap-export" type="button" class="text-link"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Export progress</button><button id="roadmap-import-button" type="button" class="text-link">Import progress<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><input id="roadmap-import" type="file" accept="application/json,.json" hidden aria-label="Select a progress backup"></div><p id="roadmap-backup-status" class="status-text" role="status"></p></div></section>
+</main>
+<footer class="site-footer section-shell"><div><a class="brand" href="#top"><span class="brand-mark"><svg class="icon" aria-hidden="true"><use href="#i-cloud"/></svg></span><span><strong>quickads</strong><span class="brand-divider">/</span><span>cloud lab</span></span></a><p>Learn the foundations. Bring them back to real work.</p></div><div class="footer-notes"><span>Learning examples · built for Dhananjay</span><span>Cloud references checked 7 Nov 2026</span><div><a href="https://cloud.google.com/free" target="_blank" rel="noopener noreferrer">Create a cloud account</a><a href="https://docs.cloud.google.com/free/docs/free-cloud-features" target="_blank" rel="noopener noreferrer">Free trial terms</a><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets" target="_blank" rel="noopener noreferrer">Budget alerts</a><a href="https://github.com/DhananjaySarathe/quickads-gcp-learning" target="_blank" rel="noopener noreferrer">GitHub</a></div></div></footer>
+<noscript><p class="noscript-message">Enable JavaScript for interactive lessons and progress tracking. Downloadable GIFs, their explanations, and library links work without it.</p></noscript>
 
-
-<script>
-(() => {
-  const root = document.getElementById('gcp-learning-roadmap');
-  const phases = {
-    setup: {
-      title:'Your first GCP account', time:'45–60 min · before Day 1',
-      outcome:'A learning project with trial status, credit balance, and spending alerts checked.',
-      steps:[
-        ['Google account ready','Your own learning account · sign-in and recovery access','You can sign in to Google.'],
-        ['Free Trial eligibility checked','No previous Free Trial; never a paying Google Cloud, Maps Platform, or Firebase user','You know whether the welcome offer applies.'],
-        ['Free Trial signup completed','cloud.google.com/free · country, profile, identity and payment verification','The console opens with a Free Trial billing account.'],
-        ['Credit and trial status verified','$300 welcome credit · 90 days from signup · eligible services only','You can find the remaining credit and trial end date.'],
-        ['Learning project selected or created','Project name: gcp-learning-lab · billing link checked','You can identify the active project and its project ID.'],
-        ['Spending alerts configured','Small learning budget · actual and forecast alerts · alerts-only budgets do not cap spend','You can find the budget and its notification recipients.']
-      ]
-    },
-    day1: {
-      title:'Understand it. Deploy it.',time:'About 6 focused hours',
-      outcome:'A tiny API you can explain, deploy, update, and debug.',
-      steps:[
-        ['Trace one browser request','1 h · server, HTTP, DNS, IP address, port, CPU and memory','You can draw the path from a button click to an API response.'],
-        ['Navigate GCP with confidence','1 h · projects, regions, billing, resources and permissions','You can find where a resource lives and who can access it.'],
-        ['Inspect a running application','1 h · Linux basics, processes, ports, logs and containers','You can explain VM versus container versus managed platform.'],
-        ['Deploy your first API','1 h · a small backend on Cloud Run','A browser or terminal receives your API response.'],
-        ['Change it and deploy again','1 h · application configuration and revisions','You can identify the new running version.'],
-        ['Break it, then fix it','1 h · startup errors, request errors and resource cleanup','You can find a deliberate failure in the logs and repair it.']
-      ]
-    },
-    day2: {
-      title:'Operate it. Understand the bill.',time:'About 6 focused hours',
-      outcome:'A service with persistent data, controlled access, and a recovery path.',
-      steps:[
-        ['Keep data beyond a restart','1 h · one database or storage option; durable versus temporary data','Your test data survives replacement of an application instance.'],
-        ['Give the app its own identity','1 h · service accounts, minimum permissions and secrets','The app accesses its dependency without a hardcoded secret.'],
-        ['Watch service health','45 min · request latency, error rates and logs','You can distinguish a healthy response from a failed one.'],
-        ['Recover from a bad release','45 min · small traffic test, scaling observations and rollback','You can return to a working revision.'],
-        ['Explain what generates charges','1½ h · billing units, baseline cost, usage and data transfer','You can estimate a small workload and compare configurations.'],
-        ['Complete the ownership challenge','1 h · explain the architecture, diagnose an issue and clean up','You can operate the lab with fewer prompts and inventory what remains.']
-      ]
-    },
-    foundation: {
-      title:'Make the foundations stick',time:'Weeks 1–4 · pace adapts to practice',
-      outcome:'You can explain and redeploy a service in the context of your company’s architecture.',
-      steps:[
-        ['Repeat the deployment independently','Week 1 · recreate the lab from your own notes','You can deploy without copying an unexplained command.'],
-        ['Strengthen Linux and container skills','Weeks 1–2 · processes, signals, files, ports and images','You can diagnose an app that fails to start.'],
-        ['Understand access and connectivity','Week 2 · IAM, application credentials, public and private access','You can explain a permission failure versus a network failure.'],
-        ['Map the company’s services','Week 3 · read-only inventory, owners and dependencies','You can name the actual services used by one application.'],
-        ['Follow a real request end to end','Weeks 3–4 · frontend, API, database and background work','You can draw the complete request path.'],
-        ['Reproduce a small service in a test environment','Week 4 · configuration, dependencies and deployment notes','Another developer can follow your notes.']
-      ]
-    },
-    ownership: {
-      title:'Build operational judgment',time:'Weeks 5–12 · evidence over speed',
-      outcome:'You can propose, test, and explain a measurable improvement to a real service.',
-      steps:[
-        ['Build useful monitoring','Week 5 · dashboards and actionable alerts','You can identify which symptoms need attention.'],
-        ['Practice failure and recovery','Week 6 · backups, restore exercises and rollback in a test environment','You can demonstrate recovery and explain its limits.'],
-        ['Read the bill by workload','Week 7 · service costs, utilization, idle resources and traffic patterns','You can explain the largest cost drivers.'],
-        ['Test one optimization','Week 8 · query efficiency, caching, resource size or scaling','You can compare cost, latency and errors before and after.'],
-        ['Make infrastructure repeatable','Weeks 9–10 · infrastructure as code and deployment automation','You can reproduce a test environment.'],
-        ['Deliver a reviewed improvement','Weeks 11–12 · company platform depth, change review and rollback plan','Your proposal includes measurements, tradeoffs and a recovery path.']
-      ]
-    }
-  };
-  let selected = 'setup';
-  let completed = new Set();
-  const count = root.querySelector('#roadmap-count');
-  const progress = root.querySelector('#roadmap-progress');
-  const steps = root.querySelector('#roadmap-steps');
-  const status = root.querySelector('#roadmap-action-status');
-  const storageKey = 'quickads-gcp-learning-v1';
-  const validKeys = new Set(Object.entries(phases).flatMap(([key,p]) => p.steps.map((_,i) => key+'-'+i)));
-
-  function restore(state) {
-    if (!state || state.modelContent?.roadmap !== 'gcp-v1') return;
-    const saved = state.modelContent;
-    selected = phases[saved.phase] ? saved.phase : 'setup';
-    completed = new Set(Array.isArray(saved.completed) ? saved.completed.filter(k => validKeys.has(k)) : []);
-  }
-  function persist() {
-    try { localStorage.setItem(storageKey, JSON.stringify(snapshot())); }
-    catch { root.querySelector('#roadmap-storage-status').textContent = 'Progress could not be saved in this browser. Export a backup to keep it.'; }
-  }
-  function snapshot() {
-    return { version:1, modelContent:{roadmap:'gcp-v1',phase:selected,completed:[...completed]} };
-  }
-  function render() {
-    const phase = phases[selected];
-    root.querySelector('#roadmap-prompt-area').hidden = true;
-    root.querySelector('#roadmap-phase-title').textContent = phase.title;
-    root.querySelector('#roadmap-time').textContent = phase.time;
-    root.querySelector('#roadmap-outcome > div').textContent = phase.outcome;
-    root.querySelectorAll('[data-phase]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.phase === selected)));
-    steps.replaceChildren();
-    phase.steps.forEach(([title,detail,evidence],i) => {
-      const key = selected+'-'+i;
-      const done = completed.has(key);
-      const row = document.createElement('li');
-      row.className = 'milestone';
-      const number = document.createElement('span');
-      number.className = 'milestone-number'+(done?' done':'');
-      number.textContent = done ? '✓' : String(i+1);
-      number.setAttribute('aria-hidden','true');
-      const content = document.createElement('div'); content.className = 'step-content';
-      const label = document.createElement('label'); label.className = 'form-check';
-      const input = document.createElement('input'); input.type = 'checkbox'; input.className = 'form-check-input'; input.checked = done;
-      const text = document.createElement('span'); text.className = 'form-check-label'; text.textContent = title;
-      input.addEventListener('change',() => {
-        if(input.checked) completed.add(key); else completed.delete(key);
-        number.textContent = input.checked ? '✓' : String(i+1);
-        number.classList.toggle('done',input.checked);
-        root.querySelector("#roadmap-prompt-area").hidden = true; status.textContent = "";
-        updateProgress(); persist();
-      });
-      label.append(input,text);
-      const detailEl = document.createElement('div'); detailEl.className = 'step-detail text-small'; detailEl.textContent = detail;
-      const evidenceEl = document.createElement('div'); evidenceEl.className = 'step-evidence text-small'; evidenceEl.textContent = 'Proof: '+evidence;
-      content.append(label,detailEl,evidenceEl);row.append(number,content);steps.append(row);
-    });
-    updateProgress();
-  }
-  function updateProgress() {
-    count.textContent = completed.size+' / '+validKeys.size+' milestones completed';
-    progress.setAttribute('aria-valuenow',String(completed.size));
-    progress.querySelector('.progress-bar').style.width = (100*completed.size/validKeys.size)+'%';
-    const phaseDone = phases[selected].steps.filter((_,i)=>completed.has(selected+'-'+i)).length;
-    root.querySelector('#roadmap-phase-count').textContent = phaseDone+' of '+phases[selected].steps.length+' completed';
-    root.querySelector('#roadmap-learn').textContent = phaseDone === phases[selected].steps.length ? 'Prepare a phase review' : 'Prepare my next lesson';
-  }
-  root.querySelectorAll('[data-phase]').forEach(button => button.addEventListener('click',() => {
-    selected = button.dataset.phase;status.textContent = '';root.querySelector('#roadmap-prompt-area').hidden = true;render();persist();
-  }));
-  root.querySelector('#roadmap-learn').addEventListener('click',async () => {
-    const phase = phases[selected];
-    const next = phase.steps.find((_,i)=>!completed.has(selected+'-'+i));
-    const prompt = next ? 'Continue my QuickAds GCP learning roadmap. Phase: '+phase.title+'. My next milestone is: '+next[0]+'. Context: '+next[1]+'. Teach me from zero, one small step at a time. Use an advertising-product example when useful, and distinguish a practice example from QuickAds infrastructure that has actually been confirmed. Start with the first action and explain why it matters. I will enter any login and payment information myself.' : 'Review the GCP learning phase '+phase.title+' with me. Check my understanding using a small practical exercise before we continue.';
-    root.querySelector('#roadmap-prompt').value = prompt;
-    root.querySelector('#roadmap-prompt-area').hidden = false;
-    status.textContent = '';
-  });
-  root.querySelector('#roadmap-copy').addEventListener('click',() => {
-    const field = root.querySelector('#roadmap-prompt');
-    field.select();
-    let copied = false;
-    try { copied = document.execCommand('copy'); } catch {}
-    status.textContent = copied ? 'Copied. Paste it into our GCP chat to continue.' : 'Prompt selected. Use your device’s Copy action, then paste into our GCP chat.';
-
-  });
-  root.querySelector('#roadmap-export').addEventListener('click',() => {
-    const blob = new Blob([JSON.stringify(snapshot(),null,2)],{type:'application/json'});
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href=url;link.download='quickads-gcp-progress.json';
-    document.body.append(link);link.click();link.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),1000);
-    root.querySelector('#roadmap-backup-status').textContent='Backup downloaded. Import it on another device to continue.';
-  });
-  root.querySelector('#roadmap-import-button').addEventListener('click',()=>root.querySelector('#roadmap-import').click());
-  root.querySelector('#roadmap-import').addEventListener('change',async event => {
-    const file=event.target.files[0];
-    if(!file) return;
-    const backupStatus=root.querySelector('#roadmap-backup-status');
-    try {
-      if(file.size>20000) throw new Error('Please choose a progress backup smaller than 20 KB.');
-      const saved=JSON.parse(await file.text());
-      if(saved.version!==1 || saved.modelContent?.roadmap!=='gcp-v1' || !Array.isArray(saved.modelContent.completed) || !phases[saved.modelContent.phase] || !saved.modelContent.completed.every(k=>typeof k==='string'&&validKeys.has(k))) throw new Error('This file is not a valid roadmap progress backup.');
-      saved.modelContent.completed.forEach(key=>completed.add(key));
-      selected=saved.modelContent.phase;
-      render();persist();backupStatus.textContent='Progress imported and merged with this browser’s checklist.';
-    } catch(error) { backupStatus.textContent=error instanceof SyntaxError ? 'This file is not valid JSON. Please choose an exported progress backup.' : error.message; }
-    event.target.value='';
-  });
-  try { restore(JSON.parse(localStorage.getItem(storageKey)||'null')); }
-  catch { root.querySelector('#roadmap-storage-status').textContent='Browser storage unavailable or unreadable. Export progress to keep a backup.'; }
-  render();
-})();
-</script>
-
-<script src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js" onload="lucide.createIcons({attrs:{width:20,height:20}})"></script>
+<script src="./data.js?v=533246566f" defer></script>
+<script src="./app.js?v=532945d1bd" defer></script>
 </body>
 </html>
