@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en" style="color-scheme:only light;background:#f6f8fc">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#f6f8fc">
+<meta name="description" content="Dhananjay’s practical Google Cloud learning roadmap for working toward service ownership at QuickAds.">
+<title>QuickAds GCP Learning Roadmap</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="gcp-learning-roadmap">
+  <div class="site-masthead">
+    <div class="brand"><span class="brand-symbol"><i data-lucide="cloud" aria-hidden="true"></i></span><span>GCP <span class="brand-light">Learning</span></span></div>
+    <span class="personal-label">Dhananjay’s QuickAds learning space</span>
+  </div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Your path to operating GCP at QuickAds</div>
+      <h1>Learn GCP.<br>One step at a time.</h1>
+      <p>Your personal path into Google Cloud. Start with an account, ship your first service, and learn to keep it healthy and cost-efficient.</p>
+      <div class="hero-facts"><span><i data-lucide="rocket" aria-hidden="true"></i> 2-day launchpad</span><span><i data-lucide="route" aria-hidden="true"></i> 8–12 weeks of practice</span></div>
+    </div>
+    <div class="hero-route" aria-label="Your learning journey">
+      <div><span>01</span><strong>Set up your cloud</strong><i data-lucide="key-round" aria-hidden="true"></i></div>
+      <div><span>02</span><strong>Ship a real service</strong><i data-lucide="rocket" aria-hidden="true"></i></div>
+      <div><span>03</span><strong>Operate with confidence</strong><i data-lucide="activity" aria-hidden="true"></i></div>
+      <div><span>04</span><strong>Make it efficient</strong><i data-lucide="chart-no-axes-combined" aria-hidden="true"></i></div>
+    </div>
+  </header>
+
+  <div class="workspace">
+    <aside class="roadmap-sidebar" aria-label="Roadmap navigation and progress">
+      <div class="eyebrow sidebar-heading">Your roadmap</div>
+      <div class="roadmap-phases" role="group" aria-label="Learning phase">
+        <button type="button" class="btn phase-btn" data-phase="setup" aria-pressed="true"><span class="phase-index">00</span><span>Start here<small>Account &amp; free credits</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="btn phase-btn" data-phase="day1" aria-pressed="false"><span class="phase-index">01</span><span>Day 1<small>Understand &amp; deploy</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="btn phase-btn" data-phase="day2" aria-pressed="false"><span class="phase-index">02</span><span>Day 2<small>Operate &amp; measure</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="btn phase-btn" data-phase="foundation" aria-pressed="false"><span class="phase-index">03</span><span>Weeks 1–4<small>Build your foundations</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="btn phase-btn" data-phase="ownership" aria-pressed="false"><span class="phase-index">04</span><span>Weeks 5–12<small>Own &amp; optimize</small></span><span class="phase-arrow" aria-hidden="true">↗</span></button>
+      </div>
+      <div class="progress-section">
+        <div class="eyebrow">Your progress</div>
+        <div id="roadmap-count" class="tabular-nums">0 / 30 milestones completed</div>
+        <div id="roadmap-progress" class="progress" role="progressbar" aria-label="Completed learning milestones" aria-valuenow="0" aria-valuemin="0" aria-valuemax="30"><div class="progress-bar" style="width:0%"></div></div>
+        <div id="roadmap-storage-status" class="storage-note">Progress stays in this browser</div>
+        <div class="backup-actions">
+          <button id="roadmap-export" type="button" class="backup-button">Export progress</button>
+          <button id="roadmap-import-button" type="button" class="backup-button">Import progress</button>
+          <input id="roadmap-import" type="file" accept="application/json,.json" hidden aria-label="Select a progress backup">
+        </div>
+        <div id="roadmap-backup-status" class="storage-note" aria-live="polite"></div>
+      </div>
+      <a class="resource-link" href="https://cloud.google.com/free" target="_blank" rel="noopener noreferrer"><i data-lucide="external-link" aria-hidden="true"></i> Google Cloud signup</a>
+    </aside>
+
+    <main class="lesson-panel" aria-labelledby="roadmap-phase-title">
+      <div class="lesson-header"><span class="eyebrow">Learn by doing</span><span id="roadmap-time" class="time-badge">45–60 min · before Day 1</span></div>
+      <h2 id="roadmap-phase-title">Your first GCP account</h2>
+      <div id="roadmap-outcome" class="outcome"><span class="eyebrow">What you’ll learn</span><div>A learning project with trial status, credit balance, and spending alerts checked.</div></div>
+      <div class="checklist-heading"><h3>Your milestones</h3><span id="roadmap-phase-count" aria-live="polite">0 of 6 completed</span></div>
+      <div class="milestone-hint">Check each milestone when you can demonstrate it.</div>
+      <ol id="roadmap-steps" class="milestones"></ol>
+      <div class="lesson-action">
+        <div><strong>One small step at a time.</strong><span>Bring your next lesson back to our GCP chat.</span></div>
+        <button id="roadmap-learn" type="button" class="btn btn-primary">Prepare my next lesson</button>
+      </div>
+      <div id="roadmap-action-status" role="status" aria-live="polite"></div>
+      <div id="roadmap-prompt-area" hidden>
+        <label class="form-label" for="roadmap-prompt">Your lesson prompt · paste this into our GCP chat</label>
+        <textarea id="roadmap-prompt" class="form-control" rows="5" readonly></textarea>
+        <button id="roadmap-copy" type="button" class="btn copy-btn">Copy lesson prompt</button>
+      </div>
+    </main>
+  </div>
+
+  <section class="learning-resources" aria-labelledby="resources-title">
+    <h2 id="resources-title">A few useful starting points</h2>
+    <p>Watch a short introduction, try a guided lab, then learn by building your own service.</p>
+    <div class="resource-grid">
+      <a href="https://www.youtube.com/watch?v=kzKFuHk8ovk" target="_blank" rel="noopener noreferrer"><strong>What is Google Cloud?</strong><span>Google Cloud Tech · a short first introduction</span></a>
+      <a href="https://www.skills.google/focuses/2794?parent=catalog" target="_blank" rel="noopener noreferrer"><strong>Your first hands-on lab</strong><span>Explore the console using the lab’s temporary credentials</span></a>
+      <a href="https://www.youtube.com/watch?v=AL2rAmWFZjM" target="_blank" rel="noopener noreferrer"><strong>Cloud Run in a minute</strong><span>Meet the platform for your first API deployment</span></a>
+      <a href="https://www.freecodecamp.org/news/pass-the-google-cloud-associate-cloud-engineer-exam/" target="_blank" rel="noopener noreferrer"><strong>A longer course to refer to</strong><span>freeCodeCamp · use relevant chapters as you progress</span></a>
+    </div>
+  </section>
+
+  <footer class="site-footer"><div><strong>Build → Deploy → Secure → Observe → Recover → Optimize</strong><span>Practical confidence, one milestone at a time.</span></div><div class="source-links"><span>References checked 24 Oct 2026</span><a href="https://docs.cloud.google.com/free/docs/free-cloud-features" target="_blank" rel="noopener noreferrer">Trial terms ↗</a><a href="https://docs.cloud.google.com/billing/docs/how-to/budgets" target="_blank" rel="noopener noreferrer">Budget alerts ↗</a></div></footer>
+</div>
+
+
+
+<script>
+(() => {
+  const root = document.getElementById('gcp-learning-roadmap');
+  const phases = {
+    setup: {
+      title:'Your first GCP account', time:'45–60 min · before Day 1',
+      outcome:'A learning project with trial status, credit balance, and spending alerts checked.',
+      steps:[
+        ['Google account ready','Your own learning account · sign-in and recovery access','You can sign in to Google.'],
+        ['Free Trial eligibility checked','No previous Free Trial; never a paying Google Cloud, Maps Platform, or Firebase user','You know whether the welcome offer applies.'],
+        ['Free Trial signup completed','cloud.google.com/free · country, profile, identity and payment verification','The console opens with a Free Trial billing account.'],
+        ['Credit and trial status verified','$300 welcome credit · 90 days from signup · eligible services only','You can find the remaining credit and trial end date.'],
+        ['Learning project selected or created','Project name: gcp-learning-lab · billing link checked','You can identify the active project and its project ID.'],
+        ['Spending alerts configured','Small learning budget · actual and forecast alerts · alerts-only budgets do not cap spend','You can find the budget and its notification recipients.']
+      ]
+    },
+    day1: {
+      title:'Understand it. Deploy it.',time:'About 6 focused hours',
+      outcome:'A tiny API you can explain, deploy, update, and debug.',
+      steps:[
+        ['Trace one browser request','1 h · server, HTTP, DNS, IP address, port, CPU and memory','You can draw the path from a button click to an API response.'],
+        ['Navigate GCP with confidence','1 h · projects, regions, billing, resources and permissions','You can find where a resource lives and who can access it.'],
+        ['Inspect a running application','1 h · Linux basics, processes, ports, logs and containers','You can explain VM versus container versus managed platform.'],
+        ['Deploy your first API','1 h · a small backend on Cloud Run','A browser or terminal receives your API response.'],
+        ['Change it and deploy again','1 h · application configuration and revisions','You can identify the new running version.'],
+        ['Break it, then fix it','1 h · startup errors, request errors and resource cleanup','You can find a deliberate failure in the logs and repair it.']
+      ]
+    },
+    day2: {
+      title:'Operate it. Understand the bill.',time:'About 6 focused hours',
+      outcome:'A service with persistent data, controlled access, and a recovery path.',
+      steps:[
+        ['Keep data beyond a restart','1 h · one database or storage option; durable versus temporary data','Your test data survives replacement of an application instance.'],
+        ['Give the app its own identity','1 h · service accounts, minimum permissions and secrets','The app accesses its dependency without a hardcoded secret.'],
+        ['Watch service health','45 min · request latency, error rates and logs','You can distinguish a healthy response from a failed one.'],
+        ['Recover from a bad release','45 min · small traffic test, scaling observations and rollback','You can return to a working revision.'],
+        ['Explain what generates charges','1½ h · billing units, baseline cost, usage and data transfer','You can estimate a small workload and compare configurations.'],
+        ['Complete the ownership challenge','1 h · explain the architecture, diagnose an issue and clean up','You can operate the lab with fewer prompts and inventory what remains.']
+      ]
+    },
+    foundation: {
+      title:'Make the foundations stick',time:'Weeks 1–4 · pace adapts to practice',
+      outcome:'You can explain and redeploy a service in the context of your company’s architecture.',
+      steps:[
+        ['Repeat the deployment independently','Week 1 · recreate the lab from your own notes','You can deploy without copying an unexplained command.'],
+        ['Strengthen Linux and container skills','Weeks 1–2 · processes, signals, files, ports and images','You can diagnose an app that fails to start.'],
+        ['Understand access and connectivity','Week 2 · IAM, application credentials, public and private access','You can explain a permission failure versus a network failure.'],
+        ['Map the company’s services','Week 3 · read-only inventory, owners and dependencies','You can name the actual services used by one application.'],
+        ['Follow a real request end to end','Weeks 3–4 · frontend, API, database and background work','You can draw the complete request path.'],
+        ['Reproduce a small service in a test environment','Week 4 · configuration, dependencies and deployment notes','Another developer can follow your notes.']
+      ]
+    },
+    ownership: {
+      title:'Build operational judgment',time:'Weeks 5–12 · evidence over speed',
+      outcome:'You can propose, test, and explain a measurable improvement to a real service.',
+      steps:[
+        ['Build useful monitoring','Week 5 · dashboards and actionable alerts','You can identify which symptoms need attention.'],
+        ['Practice failure and recovery','Week 6 · backups, restore exercises and rollback in a test environment','You can demonstrate recovery and explain its limits.'],
+        ['Read the bill by workload','Week 7 · service costs, utilization, idle resources and traffic patterns','You can explain the largest cost drivers.'],
+        ['Test one optimization','Week 8 · query efficiency, caching, resource size or scaling','You can compare cost, latency and errors before and after.'],
+        ['Make infrastructure repeatable','Weeks 9–10 · infrastructure as code and deployment automation','You can reproduce a test environment.'],
+        ['Deliver a reviewed improvement','Weeks 11–12 · company platform depth, change review and rollback plan','Your proposal includes measurements, tradeoffs and a recovery path.']
+      ]
+    }
+  };
+  let selected = 'setup';
+  let completed = new Set();
+  const count = root.querySelector('#roadmap-count');
+  const progress = root.querySelector('#roadmap-progress');
+  const steps = root.querySelector('#roadmap-steps');
+  const status = root.querySelector('#roadmap-action-status');
+  const storageKey = 'quickads-gcp-learning-v1';
+  const validKeys = new Set(Object.entries(phases).flatMap(([key,p]) => p.steps.map((_,i) => key+'-'+i)));
+
+  function restore(state) {
+    if (!state || state.modelContent?.roadmap !== 'gcp-v1') return;
+    const saved = state.modelContent;
+    selected = phases[saved.phase] ? saved.phase : 'setup';
+    completed = new Set(Array.isArray(saved.completed) ? saved.completed.filter(k => validKeys.has(k)) : []);
+  }
+  function persist() {
+    try { localStorage.setItem(storageKey, JSON.stringify(snapshot())); }
+    catch { root.querySelector('#roadmap-storage-status').textContent = 'Progress could not be saved in this browser. Export a backup to keep it.'; }
+  }
+  function snapshot() {
+    return { version:1, modelContent:{roadmap:'gcp-v1',phase:selected,completed:[...completed]} };
+  }
+  function render() {
+    const phase = phases[selected];
+    root.querySelector('#roadmap-prompt-area').hidden = true;
+    root.querySelector('#roadmap-phase-title').textContent = phase.title;
+    root.querySelector('#roadmap-time').textContent = phase.time;
+    root.querySelector('#roadmap-outcome > div').textContent = phase.outcome;
+    root.querySelectorAll('[data-phase]').forEach(button => button.setAttribute('aria-pressed',String(button.dataset.phase === selected)));
+    steps.replaceChildren();
+    phase.steps.forEach(([title,detail,evidence],i) => {
+      const key = selected+'-'+i;
+      const done = completed.has(key);
+      const row = document.createElement('li');
+      row.className = 'milestone';
+      const number = document.createElement('span');
+      number.className = 'milestone-number'+(done?' done':'');
+      number.textContent = done ? '✓' : String(i+1);
+      number.setAttribute('aria-hidden','true');
+      const content = document.createElement('div'); content.className = 'step-content';
+      const label = document.createElement('label'); label.className = 'form-check';
+      const input = document.createElement('input'); input.type = 'checkbox'; input.className = 'form-check-input'; input.checked = done;
+      const text = document.createElement('span'); text.className = 'form-check-label'; text.textContent = title;
+      input.addEventListener('change',() => {
+        if(input.checked) completed.add(key); else completed.delete(key);
+        number.textContent = input.checked ? '✓' : String(i+1);
+        number.classList.toggle('done',input.checked);
+        root.querySelector("#roadmap-prompt-area").hidden = true; status.textContent = "";
+        updateProgress(); persist();
+      });
+      label.append(input,text);
+      const detailEl = document.createElement('div'); detailEl.className = 'step-detail text-small'; detailEl.textContent = detail;
+      const evidenceEl = document.createElement('div'); evidenceEl.className = 'step-evidence text-small'; evidenceEl.textContent = 'Proof: '+evidence;
+      content.append(label,detailEl,evidenceEl);row.append(number,content);steps.append(row);
+    });
+    updateProgress();
+  }
+  function updateProgress() {
+    count.textContent = completed.size+' / '+validKeys.size+' milestones completed';
+    progress.setAttribute('aria-valuenow',String(completed.size));
+    progress.querySelector('.progress-bar').style.width = (100*completed.size/validKeys.size)+'%';
+    const phaseDone = phases[selected].steps.filter((_,i)=>completed.has(selected+'-'+i)).length;
+    root.querySelector('#roadmap-phase-count').textContent = phaseDone+' of '+phases[selected].steps.length+' completed';
+    root.querySelector('#roadmap-learn').textContent = phaseDone === phases[selected].steps.length ? 'Prepare a phase review' : 'Prepare my next lesson';
+  }
+  root.querySelectorAll('[data-phase]').forEach(button => button.addEventListener('click',() => {
+    selected = button.dataset.phase;status.textContent = '';root.querySelector('#roadmap-prompt-area').hidden = true;render();persist();
+  }));
+  root.querySelector('#roadmap-learn').addEventListener('click',async () => {
+    const phase = phases[selected];
+    const next = phase.steps.find((_,i)=>!completed.has(selected+'-'+i));
+    const prompt = next ? 'Continue my QuickAds GCP learning roadmap. Phase: '+phase.title+'. My next milestone is: '+next[0]+'. Context: '+next[1]+'. Teach me from zero, one small step at a time. Use an advertising-product example when useful, and distinguish a practice example from QuickAds infrastructure that has actually been confirmed. Start with the first action and explain why it matters. I will enter any login and payment information myself.' : 'Review the GCP learning phase '+phase.title+' with me. Check my understanding using a small practical exercise before we continue.';
+    root.querySelector('#roadmap-prompt').value = prompt;
+    root.querySelector('#roadmap-prompt-area').hidden = false;
+    status.textContent = '';
+  });
+  root.querySelector('#roadmap-copy').addEventListener('click',() => {
+    const field = root.querySelector('#roadmap-prompt');
+    field.select();
+    let copied = false;
+    try { copied = document.execCommand('copy'); } catch {}
+    status.textContent = copied ? 'Copied. Paste it into our GCP chat to continue.' : 'Prompt selected. Use your device’s Copy action, then paste into our GCP chat.';
+
+  });
+  root.querySelector('#roadmap-export').addEventListener('click',() => {
+    const blob = new Blob([JSON.stringify(snapshot(),null,2)],{type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href=url;link.download='quickads-gcp-progress.json';
+    document.body.append(link);link.click();link.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    root.querySelector('#roadmap-backup-status').textContent='Backup downloaded. Import it on another device to continue.';
+  });
+  root.querySelector('#roadmap-import-button').addEventListener('click',()=>root.querySelector('#roadmap-import').click());
+  root.querySelector('#roadmap-import').addEventListener('change',async event => {
+    const file=event.target.files[0];
+    if(!file) return;
+    const backupStatus=root.querySelector('#roadmap-backup-status');
+    try {
+      if(file.size>20000) throw new Error('Please choose a progress backup smaller than 20 KB.');
+      const saved=JSON.parse(await file.text());
+      if(saved.version!==1 || saved.modelContent?.roadmap!=='gcp-v1' || !Array.isArray(saved.modelContent.completed) || !phases[saved.modelContent.phase] || !saved.modelContent.completed.every(k=>typeof k==='string'&&validKeys.has(k))) throw new Error('This file is not a valid roadmap progress backup.');
+      saved.modelContent.completed.forEach(key=>completed.add(key));
+      selected=saved.modelContent.phase;
+      render();persist();backupStatus.textContent='Progress imported and merged with this browser’s checklist.';
+    } catch(error) { backupStatus.textContent=error instanceof SyntaxError ? 'This file is not valid JSON. Please choose an exported progress backup.' : error.message; }
+    event.target.value='';
+  });
+  try { restore(JSON.parse(localStorage.getItem(storageKey)||'null')); }
+  catch { root.querySelector('#roadmap-storage-status').textContent='Browser storage unavailable or unreadable. Export progress to keep a backup.'; }
+  render();
+})();
+</script>
+
+<script src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js" onload="lucide.createIcons({attrs:{width:20,height:20}})"></script>
+</body>
+</html>
